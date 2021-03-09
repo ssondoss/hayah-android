@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyRequests">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#8675a9"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="استدعاءاتك المرسلة لطلب وحدات دم "/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginHorizontal="10dp"
+            android:textColor="#000"
+            android:layout_marginVertical="20dp"
+            android:text="قم بإدخال رقمك الوطني  للبحث عن الاستدعاءات التي قمت بإرسالها : "/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginHorizontal="15dp"
+            android:gravity="center"
+            android:layout_marginVertical="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/search"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:background="@drawable/borders"
+                android:gravity="center"
+                android:onClick="searchForRequests"
+                android:text="بحث"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/insert_national_id"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:maxLength="10"
+                android:layout_marginHorizontal="15dp"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:gravity="right"
+                android:textColor="#000"
+                android:text="رقمك الوطني :"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/my_requests_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

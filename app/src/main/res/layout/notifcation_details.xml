@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Notifcation_details">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <TableRow android:layout_marginTop="2dp">
+                <TextView
+                    android:id="@+id/label_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/table_head"
+                    android:gravity="center"
+                    android:text="المرسل"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/id"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:paddingVertical="10dp"
+                    android:background="@drawable/table_body"
+                    android:gravity="center"
+                    android:text=" "
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/label_patient"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/table_head"
+                    android:gravity="center"
+                    android:text="اسم المريض"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/patient_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingVertical="10dp"
+                    android:background="@drawable/table_body"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text=" "
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/age_label"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/table_head"
+                    android:gravity="center"
+                    android:text="تاريخ الميلاد"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/gender_label"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/table_head"
+                    android:gravity="center"
+                    android:text="الجنس"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </TableRow>
+            <TableRow >
+
+                <TextView
+                    android:id="@+id/age"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/table_body"
+                    android:gravity="center"
+                    android:text=" "
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="17sp" />
+                <TextView
+                    android:id="@+id/gender"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/table_body"
+                    android:gravity="center"
+                    android:text=" "
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/hospital_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_head"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text=" اسم المستشفى التي يتعالج بها"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/hospital"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/table_body"
+                    android:gravity="center"
+                    android:text=" "
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/hospital_city_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_head"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="المحافظة التي تقع بها المستشفى"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/city"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingVertical="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/table_body"
+                    android:gravity="center"
+                    android:text=" "
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/hospital_address_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_head"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="العنوان التفصيلي للمستشفى "
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/table_body"
+                    android:gravity="center"
+                    android:text=" "
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </TableRow>
+            <TableRow android:id="@+id/row_label_floor_and_bed">
+                <TextView
+                    android:id="@+id/bed_label"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/table_head"
+                    android:gravity="center"
+                    android:text="السرير"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/floor_label"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/table_head"
+                    android:gravity="center"
+                    android:text="الطابق"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </TableRow>
+            <TableRow android:weightSum="2" android:id="@+id/row_floor_and_bed">
+                <TextView
+                    android:id="@+id/floor"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/table_body"
+                    android:gravity="center"
+                    android:text=" "
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/bed"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/table_body"
+                    android:gravity="center"
+                    android:text=" "
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/blood_units"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/table_head"
+                    android:gravity="center"
+                    android:text="عدد وحدات الدم المحتاجة "
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </TableRow>
+            <TextView
+                android:id="@+id/blood_units_label"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/table_body"
+                android:gravity="center"
+                android:text=" "
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TableRow>
+
+            </TableRow>
+            <TableRow >
+                <TextView
+                    android:id="@+id/blood_type_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/table_head"
+                    android:gravity="center"
+                    android:text="زمر(ة) الدم المحتاجة"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/blood_type"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/table_body"
+                    android:gravity="center"
+                    android:text=" "
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/patients_phones_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/table_head"
+                    android:gravity="center"
+                    android:text="أرقام هواتف المريض  للتواصل معه عند الحاجة"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </TableRow>
+            <TableRow android:weightSum="2">
+
+            <TextView
+                android:id="@+id/patient_phone_1"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/table_body"
+                android:gravity="center"
+                android:text=" "
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/patient_phone_2"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/table_body"
+                android:gravity="center"
+                android:text=" "
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="bold" /></TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/notes_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/table_head"
+                    android:gravity="center"
+                    android:text="ملاحظات إضافية تخص الطلب"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/notes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/table_body"
+                    android:gravity="center"
+                    android:paddingVertical="10dp"
+                    android:text=" "
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+
+
+        </TableLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "541148834999",
+    "project_id": "hayah-28356",
+    "storage_bucket": "hayah-28356.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:541148834999:android:0d3b59dada827d05e4b132",
+        "android_client_info": {
+          "package_name": "com.example.hayah"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "541148834999-0til0bj078vgoba4br83f50d5aigpubi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDb_0CYBzSCwDxNuG5tA1x1MtxO5lDclgI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "541148834999-0til0bj078vgoba4br83f50d5aigpubi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

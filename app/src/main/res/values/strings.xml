@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Hayah</string>
+    <string-array name="states">
+        <item>إربد</item>
+        <item> عمان</item>
+        <item>الزرقاء</item>
+        <item>الطفيلة</item>
+        <item>معان</item>
+        <item>جرش</item>
+        <item>عجلون</item>
+        <item>البلقاء</item>
+        <item>الكرك</item>
+        <item>المفرق</item>
+        <item>العقبة</item>
+        <item>السلط</item>
+    </string-array>
+    <string-array name="states_withall">
+        <item>جميع المحافظات</item>
+        <item>إربد</item>
+        <item> عمان</item>
+        <item>الزرقاء</item>
+        <item>الطفيلة</item>
+        <item>معان</item>
+        <item>جرش</item>
+        <item>عجلون</item>
+        <item>البلقاء</item>
+        <item>الكرك</item>
+        <item>المفرق</item>
+        <item>العقبة</item>
+        <item>السلط</item>
+    </string-array>
+    <string-array name="blood_types">
+        <item>O+</item>
+        <item>O-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+
+    </string-array>
+
+    <string-array name="blood_types_withall">
+        <item>كافة زمر الدم</item>
+        <item>O+</item>
+        <item>O-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+
+    </string-array>
+
+
+    <string-array name="blood_components">
+        <item>دم كامل</item>
+        <item>كريات دم حمراء</item>
+        <item>صفائح دموية</item>
+        <item>كريات دم بيضاء</item>
+        <item>بلازما</item>
+
+
+    </string-array>
+    <string-array name="gender">
+        <item>ذكر</item>
+        <item>أنثى</item>
+
+    </string-array>
+</resources>
